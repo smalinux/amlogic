@@ -18,7 +18,9 @@ pushd ./external/uboot/
 	fi
 	# Build U-boot
 	make aml-s905d3-cc_defconfig
-	make -j$(nproc)
+	#make -j$(nproc)
+	#make -j$(nproc) make DEBUG=1 PLAT=gxl AML_STDPARAMS=1
+	make PLAT=sm1 DEBUG=0
 	echo "U-Boot binary: ${PWD}/u-boot.bin"
 popd
 
