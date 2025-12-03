@@ -1,0 +1,212 @@
+this log from uboot from factory u-boot
+
+=>
+=>
+=> SM1:BL:511f6b:81ca2f;FEAT:A0F83180:20282000;POC:B;RCY:0;SPINOR:0;0.0;CHK:0;
+bl2_stage_init 0x01
+bl2_stage_init 0x81
+hw id: 0x0000 - pwm id 0x01
+bl2_stage_init 0xc1
+bl2_stage_init 0x02
+
+L0:00000000
+L1:00000703
+L2:00008067
+L3:15000000
+S1:00000000
+B2:20282000
+B1:a0f83180
+
+TE: 71291
+
+BL2 Built : 15:21:48, Aug 28 2019. g12a g1bf2b53 - luan.yuan@droid15-sz
+
+Board ID = 1
+Set cpu clk to 24M
+Set clk81 to 24M
+Use GP1_pll as DSU clk.
+DSU clk: 1200 Mhz
+CPU clk: 1200 MHz
+Set clk81 to 166.6M
+DDR driver_vesion: LPDDR4_PHY_V_0_1_18 build time: Aug 28 2019 15:21:45
+board id: 1
+Load FIP HDR from SPI, src: 0x00010000, des: 0xfffd0000, size: 0x00004000, part: 0
+fw parse done
+Load ddrfw from SPI, src: 0x00030000, des: 0xfffd0000, size: 0x0000c000, part: 0
+Load ddrfw from SPI, src: 0x00014000, des: 0xfffd0000, size: 0x00004000, part: 0
+PIEI prepare done
+fastboot data load
+fastboot data verify
+verify result: 266
+Cfg max: 2, cur: 1. Board id: 255. Force loop cfg
+LPDDR4 probe
+ddr clk to 1584MHz
+Load ddrfw from SPI, src: 0x00018000, des: 0xfffd0000, size: 0x0000c000, part: 0
+
+dmc_version 0001
+Check phy result
+INFO : End of CA training
+INFO : End of initialization
+INFO : Training has run successfully!
+Check phy result
+INFO : End of initialization
+INFO : End of read enable training
+INFO : End of fine write leveling
+INFO : End of Write leveling coarse delay
+INFO : Training has run successfully!
+Check phy result
+INFO : End of initialization
+INFO : End of read dq deskew training
+INFO : End of MPR read delay center optimization
+INFO : End of write delay center optimization
+INFO : End of read delay center optimization
+INFO : End of max read latency training
+INFO : Training has run successfully!
+1D training succeed
+Load ddrfw from SPI, src: 0x00024000, des: 0xfffd0000, size: 0x0000c000, part: 0
+Check phy result
+INFO : End of initialization
+INFO : End of 2D read delay Voltage center optimization
+INFO : End of 2D read delay Voltage center optimization
+INFO : End of 2D write delay Voltage center optimization
+INFO : End of 2D write delay Voltage center optimization
+INFO : Training has run successfully!
+
+channel==0
+RxClkDly_Margin_A0==78 ps 8
+TxDqDly_Margin_A0==98 ps 10
+RxClkDly_Margin_A1==78 ps 8
+TxDqDly_Margin_A1==98 ps 10
+TrainedVREFDQ_A0==74
+TrainedVREFDQ_A1==75
+VrefDac_Margin_A0==23
+DeviceVref_Margin_A0==40
+VrefDac_Margin_A1==22
+DeviceVref_Margin_A1==39
+
+
+channel==1
+RxClkDly_Margin_A0==88 ps 9
+TxDqDly_Margin_A0==88 ps 9
+RxClkDly_Margin_A1==88 ps 9
+TxDqDly_Margin_A1==98 ps 10
+TrainedVREFDQ_A0==77
+TrainedVREFDQ_A1==78
+VrefDac_Margin_A0==21
+DeviceVref_Margin_A0==37
+VrefDac_Margin_A1==21
+DeviceVref_Margin_A1==36
+
+ dwc_ddrphy_apb_wr((0<<20)|(2<<16)|(0<<12)|(0xb0):0004
+
+soc_vref_reg_value 0x 00000019 00000018 00000017 00000017 00000018 00000016 00000017 00000015 00000018 00000018 00000017 00000017 00000018 00000018 00000019 00000019 00000019 00000015 00000017 00000017 00000017 00000016 00000015 00000017 00000019 0000001a 00000018 00000018 0000001a 00000015 00000017 00000019 dram_vref_reg_value 0x 00000061
+2D training succeed
+aml_ddr_fw_vesion: LPDDR4_PHY_V_0_1_18 build time: Aug 28 2019 13:54:19
+auto size-- 65535DDR cs0 size: 2048MB
+DDR cs1 size: 2048MB
+DMC_DDR_CTRL: 00e00024DDR size: 3928MB
+cs0 DataBus test pass
+cs1 DataBus test pass
+cs0 AddrBus test pass
+cs1 AddrBus test pass
+
+100bdlr_step_size ps== 450
+result report
+boot times 0Enable ddr reg access
+Load FIP HDR from SPI, src: 0x00010000, des: 0x01700000, size: 0x00004000, part: 0
+Load BL3X from SPI, src: 0x0003c000, des: 0x0172c000, size: 0x000c4000, part: 0
+bl2z: ptr: 05129330, size: 00001e40
+0.0;M3 CHK:0;cm4_sp_mode 0
+MVN_1=0x00000000
+MVN_2=0x00000000
+[Image: g12a_v1.1.3390-6ac5299 2019-09-26 14:09:46 luan.yuan@droid15-sz]
+OPS=0x04
+ring efuse init
+2b 0c 04 00 01 27 15 00 00 05 34 34 36 46 50 50
+[0.017354 Inits done]
+secure task start!
+high task start!
+low task start!
+run into bl31
+NOTICE:  BL31: v1.3(release):4fc40b1
+NOTICE:  BL31: Built : 15:57:33, May 22 2019
+NOTICE:  BL31: G12A normal boot!
+NOTICE:  BL31: BL33 decompress pass
+ERROR:   Error initializing runtime service opteed_fast
+
+
+U-Boot 2023.07+ (Sep 20 2023 - 03:58:15 -0400) Libre Computer AML-S905D3-CC
+
+Model: Libre Computer AML-S905D3-CC
+SoC:   Amlogic Meson SM1 (S905D3) Revision 2b:c (4:2)
+DRAM:  2 GiB (effective 3.8 GiB)
+Core:  403 devices, 30 uclasses, devicetree: separate
+WDT:   Not starting watchdog@f0d0
+MMC:   mmc@ffe05000: 1, mmc@ffe07000: 0
+Loading Environment from FAT... Card did not respond to voltage select! : -110
+** Bad device specification mmc 0 **
+Card did not respond to voltage select! : -110
+** Bad device specification mmc 0 **
+Couldn't find partition mmc 0
+Card did not respond to voltage select! : -110
+** Bad device specification mmc 0 **
+Couldn't find partition mmc 0
+Error: could not access storage.
+starting USB...
+Bus usb@ff500000: Register 3000140 NbrPorts 3
+Starting the controller
+USB XHCI 1.10
+scanning bus usb@ff500000 for devices... 3 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Hit any key to stop autoboot:  0
+Scanning for bootflows in all bootdevs
+Seq  Method       State   Uclass    Part  Name                      Filename
+---  -----------  ------  --------  ----  ------------------------  ----------------
+Scanning global bootmeth 'efi_mgr':
+Scanning bootdev 'mmc@ffe07000.bootdev':
+Card did not respond to voltage select! : -110
+Scanning bootdev 'mmc@ffe05000.bootdev':
+Card did not respond to voltage select! : -110
+No more bootdevs
+---  -----------  ------  --------  ----  ------------------------  ----------------
+(0 bootflows, 0 valid)
+=>
+=>
+=>
+=> printenv
+arch=arm
+baudrate=115200
+board=aml-s905d3-cc
+board_name=aml-s905d3-cc
+boot_source=spi
+boot_targets=mmc0 mmc1 usb spi
+bootcmd=bootflow scan -lb
+bootdelay=1
+bootdevice=0
+cpu=armv8
+ethaddr=e2:ef:4b:d6:21:e5
+fdt_addr_r=0x08008000
+fdtcontroladdr=eae98c00
+fdtfile=amlogic/meson-sm1-s905d3-libretech-cc.dtb
+fdtoverlay_addr_r=0x01000000
+kernel_addr_r=0x08080000
+kernel_comp_addr_r=0x0d080000
+kernel_comp_size=0x2000000
+loadaddr=0x1000000
+preboot=usb start
+pxefile_addr_r=0x01080000
+ramdisk_addr_r=0x13000000
+scriptaddr=0x08000000
+soc=meson
+splashdevpart=0
+splashfile=boot.bmp
+splashimage=0x1000000
+splashpos=m,m
+splashsource=mmc_fs
+stderr=vidconsole,serial
+stdin=usbkbd,serial
+stdout=vidconsole,serial
+vendor=libre-computer
+ver=U-Boot 2023.07+ (Sep 20 2023 - 03:58:15 -0400) Libre Computer AML-S905D3-CC
+
+Environment size: 797/4092 bytes
