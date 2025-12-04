@@ -8,7 +8,7 @@ pushd ./external/debian/
 	#sudo dd if=debian-12-base-arm64+aml-s905x-cc.img of=/dev/sdX bs=4M status=progress conv=fsync
 
 	# Wait for it to complete, then sync
-	sync
+	#sync
 
 popd
 
