@@ -3,4 +3,4 @@
 	url = https://github.com/libre-computer-project/libretech-buildroot
 [submodule "external/libretech-builder-simple"]
 	path = external/libretech-builder-simple
-	url = https://github.com/libre-computer-project/libretech-builder-simple
+	url = https://github.com/smalinux/libretech-builder-simple
