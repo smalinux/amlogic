@@ -9,7 +9,7 @@ pushd ./external/buildroot/
 	make
 
 	# Flash SD card
-	# sudo dd if=./external/buildroot/output/images/sdcard.img of=/dev/sdb bs=4M status=progress conv=fsync
-	#sync
+	sudo dd if=./output/images/sdcard.img of=/dev/sda bs=4M status=progress conv=fsync
+	sync
 popd
 
